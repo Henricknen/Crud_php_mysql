@@ -34,15 +34,16 @@
         <div class = "row">
             <div class = "col mt-5">
                 <?php
-                    switch(@$_REQUEST["page"]) {
-                    case "novo":
-                        include("novo_usuario.php");
-                    break;
-                    case "listar":
-                        include("listar_usuario.php");
-                    break;
-                    default:
-                        print "<h1>Bem Vindos!</h1>";
+                  include("config.php");    // fazendo a inclusão do arquivo de conexão com banco de dados
+                  switch(@$_REQUEST["page"]) {
+                  case "novo":
+                      include("novo_usuario.php");
+                  break;
+                  case "listar":
+                      include("listar_usuario.php");
+                  break;
+                  default:
+                      print "<h1>Bem Vindos!</h1>";
         }
             ?>
             </div>
