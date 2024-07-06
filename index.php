@@ -42,6 +42,8 @@
                   case "listar":
                       include("listar_usuario.php");
                   break;
+                  case "salvar":
+                      include("salvar_usuario.php");
                   default:
                       print "<h1>Bem Vindos!</h1>";
         }
