@@ -1,5 +1,6 @@
 <h1>Novo Usuário</h1>
 <form action = "?page=salvar" method = "POST">
+    <input type = "hidden" name = "acao" value = "cadastrar">       <!-- mandando todos os dados para para a página 'salvar', com a 'ação cadastrar' vai oculta -->
     <div class = "mb-3">
         <label>Nome</label>
         <input type = "text" name = "nome" class = "form-control">

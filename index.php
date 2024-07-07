@@ -44,6 +44,7 @@
                   break;
                   case "salvar":
                       include("salvar_usuario.php");
+                  break;
                   default:
                       print "<h1>Bem Vindos!</h1>";
         }
