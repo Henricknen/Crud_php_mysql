@@ -8,24 +8,24 @@
 
     if($qtd > 0) {
         print "<table class = 'table table-hover table-striped table-bordered'>";
-        print "<tr>";
-        print "<th>#</th>";
-        print "<th>Nome</th>";
-        print "<th>E-mail</th>";
-        print "<th>Data de nascimento</th>";
-        print "<th>Ações</th>";
-        print "</tr>";
+            print "<tr>";
+            print "<th>#</th>";
+            print "<th>Nome</th>";
+            print "<th>E-mail</th>";
+            print "<th>Data de nascimento</th>";
+            print "<th>Ações</th>";
+            print "</tr>";
         while($row = $res-> fetch_object()) {       // 'fetch_object' traz os objetos do resultado da consulta e armazena na variável '$row'
             print "<tr>";
-            print "<td>". $row-> id. "</td  >";        // imprimindo o objeto 'id'
+            print "<td>". $row-> id. "</td>";        // imprimindo o objeto 'id'
             print "<td>". $row-> nome. "</td>";
             print "<td>". $row-> email. "</td>";
             $data_nascimento = date('d/m/Y', strtotime($row->data_nasc));
             print "<td>". $data_nascimento . "</td>";
             print "<td>
-                <button onclick=\"location.href='?page=editar&id=" . $row->id . "'\" class='btn btn-success'>Editar</button>
-                <button class='btn btn-danger'>Excluir</button>
-            </td>";
+                    <button onclick=\"location.href='?page=editar&id=". $row-> id . "'\" class='btn btn-success'>Editar</button>
+                    <button class='btn btn-danger'>Excluir</button>
+                </td>";
             print "</tr>";
         }
         print "</table>";

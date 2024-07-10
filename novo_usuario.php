@@ -18,6 +18,6 @@
         <input type = "date" name = "data_nasc" class = "form-control">
     </div>
     <div class = "mb-3">
-        <button type = "date" name = "data_nasc" class = "btn btn-primary">Enviar</button>
+        <button type = "submit" class = "btn btn-primary">Enviar</button>
     </div>
 </form>
