@@ -49,7 +49,8 @@
                       include("editar_usuario.php");
                   break;
                   default:
-                      print "<h1>Bem Vindos!</h1>";
+                      print "<h1>Crud utilizando</h1>";
+                      print "<img src=' assets/img/php_sql_bootstrap.jpg' alt='Descrição da Imagem'>";
         }
             ?>
             </div>
